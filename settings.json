@@ -5,7 +5,7 @@
   "editor.linkedEditing": true,
   "editor.wordWrap": "on",
   "javascript.updateImportsOnFileMove.enabled": "always",
-  // "window.zoomLevel": 1.5,
+  "window.zoomLevel": 1.5,
   "launch": {},
   "[json]": {},
   // "workbench.statusBar.visible": false,
@@ -14,6 +14,9 @@
   "workbench.iconTheme": "material-icon-theme",
   "update.showReleaseNotes": false,
   "zenMode.hideLineNumbers": false,
+  "zenMode.fullScreen": false,
+  "zenMode.hideActivityBar": false,
+  "zenMode.hideStatusBar": false,
   "editor.lineNumbers": "relative",
 
   "vim.leader": "<Space>",
@@ -84,6 +87,12 @@
     // toggle comment selection
     { "before": ["leader", "c"], "commands": ["editor.action.commentLine"] }
   ],
+  "vim.insertModeKeyBindingsNonRecursive": [
+    {
+      "before": ["j", "k"],
+      "after": ["<Esc>"]
+    }
+  ],
   "[typescriptreact]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
@@ -94,5 +103,6 @@
   "[jsonc]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "workbench.activityBar.location": "hidden"
+  "workbench.activityBar.location": "hidden",
+  "diffEditor.maxComputationTime": 0
 }
